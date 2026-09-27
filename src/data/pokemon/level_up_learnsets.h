@@ -5743,4 +5743,28 @@ static const u16 sZekromLevelUpLearnset[] = {
     LEVEL_UP_MOVE(100, MOVE_BOLT_STRIKE), // Zekrom ultimate signature
     LEVEL_UP_END
 };
+static const u16 sKyuremLevelUpLearnset[] = {
+    LEVEL_UP_MOVE(1, MOVE_DRAGON_RAGE),
+    LEVEL_UP_MOVE(1, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(8, MOVE_IMPRISON),
+    LEVEL_UP_MOVE(15, MOVE_ICE_FANG),
+    LEVEL_UP_MOVE(22, MOVE_ICEY_WIND),
+    LEVEL_UP_MOVE(29, MOVE_DRAGON_BREATH),
+    LEVEL_UP_MOVE(36, MOVE_SLASH),
+    LEVEL_UP_MOVE(43, MOVE_SCARY_FACE),
+    LEVEL_UP_MOVE(50, MOVE_GLACIATE), // Kyurem signature
+    LEVEL_UP_MOVE(54, MOVE_DRAGON_PULSE),
+    LEVEL_UP_MOVE(64, MOVE_ENDEAVOR),
+    LEVEL_UP_MOVE(71, MOVE_ANCIENT_POWER),
+    LEVEL_UP_MOVE(78, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(85, MOVE_OUTRAGE),
+    LEVEL_UP_MOVE(92, MOVE_HYPER_VOICE),
+    LEVEL_UP_MOVE(100, MOVE_SHEER_COLD),
+    // Black & White Kyurem forms expansion pool moves:
+    LEVEL_UP_MOVE(50, MOVE_FUSION_FLARE), // White Kyurem addition
+    LEVEL_UP_MOVE(50, MOVE_FUSION_BOLT),  // Black Kyurem addition
+    LEVEL_UP_MOVE(100, MOVE_ICE_BURN),    // White Kyurem signature
+    LEVEL_UP_MOVE(100, MOVE_FREEZE_SHOCK),// Black Kyurem signature
+    LEVEL_UP_END
+};
 
