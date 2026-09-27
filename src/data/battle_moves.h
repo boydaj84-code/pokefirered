@@ -4614,4 +4614,69 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED | FLAG_KINGS_ROCK_AFFECTED,
     },
+    [MOVE_GLACIATE] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 65,
+        .type = TYPE_ICE,
+        .accuracy = 95,
+        .pp = 10,
+        .secondaryEffectChance = 100, // Lowers target's Speed
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_FUSION_FLARE] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 5,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_FUSION_BOLT] =
+    {
+        .effect = EFFECT_HIT,
+        .power = 100,
+        .type = TYPE_ELECTRIC,
+        .accuracy = 100,
+        .pp = 5,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_ICE_BURN] =
+    {
+        .effect = EFFECT_SEMI_INVULNERABLE, // Two-turn charge move (burns target)
+        .power = 140,
+        .type = TYPE_ICE,
+        .accuracy = 90,
+        .pp = 5,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
+    [MOVE_FREEZE_SHOCK] =
+    {
+        .effect = EFFECT_SEMI_INVULNERABLE, // Two-turn charge move (paralyzes target)
+        .power = 140,
+        .type = TYPE_ICE,
+        .accuracy = 90,
+        .pp = 5,
+        .secondaryEffectChance = 30,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
+
 };
