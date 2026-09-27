@@ -355,6 +355,15 @@ const u8 gMoveDescription_ShockWave[] = _("A rapid jolt of\nelectricity strikes\
 const u8 gMoveDescription_WaterPulse[] = _("An attack with a\npulsing blast of\nwater. It may also\nconfuse the foe.");
 const u8 gMoveDescription_DoomDesire[] = _("A move that attacks\nthe foe with a\nblast of light two\nturns after use.");
 const u8 gMoveDescription_PsychoBoost[] = _("An intense attack\nthat also sharply\nreduces the user's\nSP. ATK stat.");
+const u8 gMoveDescription_Glaciate[] = _("The user attacks with a\nchilling breath of ice.\nLowers the target's Speed.");
+const u8 gMoveDescription_FusionFlare[] = _("Engulfs the target in a\nmassive flame. Power is\nboosted by Fusion Bolt.");
+const u8 gMoveDescription_FusionBolt[] = _("Strikes with a massive\nelectric bolt. Power is\nboosted by Fusion Flare.");
+const u8 gMoveDescription_FusionBlast[] = _("A massive fusion blast that\nalways deals super-effective\ndamage against Water types.");
+const u8 gMoveDescription_BlueFlare[] = _("Engulfs the target in a\nfrantic flame. May leave\nthe target with a burn.");
+const u8 gMoveDescription_BoltStrike[] = _("Charges the target with\nan electric surge. May\nleave the target paralyzed.");
+const u8 gOveDescription_IceBurn[] = _("A freezing-cold fiery blast\non the second turn. May\nleave the target frozen/burned.");
+const u8 gMoveDescription_FreezeShock[] = _("A hard-hitting electric-ice\ncharge on the second turn.\nMay paralyze the target.");
+const u8 gMoveDescription_PlasmaCannon[] = _("Fires a dense dragon plasma\nbeam. Lowers the user's\nstats severely.");
 
 const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] = {
     [MOVE_POUND         - 1] = gMoveDescription_Pound,
