@@ -4678,5 +4678,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
+    [MOVE_FUSION_BLAST] =
+    {
+        .effect = EFFECT_BURN_HIT, // Or EFFECT_PARALYZE_HIT depending on your primary status preference
+        .power = 100,
+        .type = TYPE_FIRE,
+        .accuracy = 100,
+        .pp = 5,
+        .secondaryEffectChance = 30, // 30% chance to trigger the status effect
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
+    },
 
 };
