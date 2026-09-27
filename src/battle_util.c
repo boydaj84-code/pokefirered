@@ -1974,12 +1974,11 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                 gBattlescriptCurrInstr = BattleScript_AbilityActivated; 
             }
             effect = 1;
-                case ABILITYEFFECT_ABSORBING: 
+                    case ABILITYEFFECT_ABSORBING:
+        // Turboblaze and Teravolt ignore absorption entirely
         if (gBattleMons[gBattlerAttacker].ability == ABILITY_TURBOBLAZE || gBattleMons[gBattlerAttacker].ability == ABILITY_TERAVOLT)
         {
-            // Turboblaze and Teravolt ignore absorption entirely! 
-            // Skip this block so the move hits normally.
-            break; 
+            break;
         }
         
         // Your other absorbing abilities (Volt Absorb, Water Absorb, Electrical Fire, etc.) go down here...
