@@ -76,6 +76,9 @@ static const u8 sPurePowerDescription[] = _("Raises ATTACK.");
 static const u8 sShellArmorDescription[] = _("Blocks critical hits.");
 static const u8 sCacophonyDescription[] = _("Avoids sound-based moves.");
 static const u8 sAirLockDescription[] = _("Negates weather effects.");
+static const u8 sTurboblazeDescription[] = _("Empowers the user with a fiery blaze.");
+static const u8 sTeravoltDescription[] = _("Engulfs the user in raw electric power.");
+static const u8 sElectricalFireDescription[] = _("Absorbs Water/Electric and boosts Sp. Atk.");
 
 const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
 {
@@ -157,6 +160,9 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_SHELL_ARMOR] = sShellArmorDescription,
     [ABILITY_CACOPHONY] = sCacophonyDescription,
     [ABILITY_AIR_LOCK] = sAirLockDescription,
+    [ABILITY_TURBOBLAZE] = sTurboblazeDescription,
+    [ABILITY_TERAVOLT] = sTeravoltDescription,
+    [ABILITY_ELECTRICAL_FIRE] = sElectricalFireDescription,
 };
 
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
