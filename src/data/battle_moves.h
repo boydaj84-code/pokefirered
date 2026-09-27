@@ -4691,5 +4691,17 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
         .priority = 0,
         .flags = FLAG_PROTECT_AFFECTED | FLAG_MIRROR_MOVE_AFFECTED,
     },
+[MOVE_PLASMA_CANNON] =
+{
+    .effect = EFFECT_HIT_RECOIL_DEF_SPDEF_DOWN,
+    .power = 140,
+    .type = TYPE_DRAGON,
+    .accuracy = 90,
+    .pp = 5,
+    .secondaryEffectChance = 0,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED | FLAG_MAKE_CONTACT,
+},
 
 };
