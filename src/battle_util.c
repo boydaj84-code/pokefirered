@@ -1957,6 +1957,23 @@ u8 AbilityBattleEffects(u8 caseID, u8 battler, u8 ability, u8 special, u16 moveA
                         if (gBattleMoveDamage == 0)
                             gBattleMoveDamage = 1;
                         gBattleMoveDamage *= -1;
+            case ABILITY_ELECTRICAL_FIRE:
+        if ((moveType == TYPE_ELECTRIC || moveType == TYPE_WATER) && gBattleMoves[move].power != 0)
+        {
+            if (gProtectStructs[gBattlerAttacker].notFirstStrike)
+            {
+                gBattlescriptCurrInstr = BattleScript_SoundproofProtected;
+            }
+            else
+            {
+                // Nullify damage
+                gBattleMoveDamage = 0;
+                // Apply +1 Special Attack stage boost to the defender (Kyurem-Plasma)
+                Bld_ModStat(battler, STAT_SPATK, 1);
+                // Trigger the ability activation banner/message script
+                gBattlescriptCurrInstr = BattleScript_AbilityActivated; 
+            }
+            effect = 1;
                     }
                 }
             }
