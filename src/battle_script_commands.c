@@ -1341,6 +1341,26 @@ static void Cmd_typecalc(void)
 
     gBattlescriptCurrInstr++;
 }
+    if (gBattleMons[gBattlerTarget].ability == ABILITY_WONDER_GUARD
+     && (!(gMoveResultFlags & MOVE_RESULT_SUPER_EFFECTIVE))
+     && gBattleMoves[gCurrentMove].power)
+    {
+        gLastUsedAbility = ABILITY_WONDER_GUARD;
+        gMoveResultFlags |= MOVE_RESULT_MISSED;
+        gLastLandedMoves[gBattlerTarget] = 0;
+        gLastHitByType[gBattlerTarget] = 0;
+        gBattleCommunication[MISS_TYPE] = B_MSG_AVOIDED_DMG;
+        RecordAbilityBattle(gBattlerTarget, gLastUsedAbility);
+    }
+
+    // --- Custom Turboblaze, Teravolt, & Fusion Blast Override ---
+    if (gBattleMons[gBattlerAttacker].ability == ABILITY_TURBOBLAZE || 
+        gBattleMons[gBattlerAttacker].ability == ABILITY_TERAVOLT ||
+        gCurrentMove == MOVE_FUSION_BLAST)
+    {
+        // Insert your ability-piercing or super-effective type logic here!
+    }
+
 
 static void CheckWonderGuardAndLevitate(void)
 {
