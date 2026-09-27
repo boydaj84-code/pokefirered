@@ -720,4 +720,13 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] = {
     [MOVE_WATER_PULSE   - 1] = gMoveDescription_WaterPulse,
     [MOVE_DOOM_DESIRE   - 1] = gMoveDescription_DoomDesire,
     [MOVE_PSYCHO_BOOST  - 1] = gMoveDescription_PsychoBoost,
+    [MOVE_GLACIATE - 1] = gMoveDescription_Glaciate,
+    [MOVE_FUSION_FLARE - 1] = gMoveDescription_FusionFlare,
+    [MOVE_FUSION_BOLT - 1] = gMoveDescription_FusionBolt,
+    [MOVE_FUSION_BLAST - 1] = gMoveDescription_FusionBlast,
+    [MOVE_BLUE_FLARE - 1] = gMoveDescription_BlueFlare,
+    [MOVE_BOLT_STRIKE - 1] = gMoveDescription_BoltStrike,
+    [MOVE_ICE_BURN - 1] = gMoveDescription_IceBurn,
+    [MOVE_FREEZE_SHOCK - 1] = gMoveDescription_FreezeShock,
+    [MOVE_PLASMA_CANNON - 1] = gMoveDescription_PlasmaCannon,
 };
