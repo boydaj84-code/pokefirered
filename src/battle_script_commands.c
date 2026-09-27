@@ -4439,6 +4439,14 @@ static void Cmd_typecalc2(void)
             i += 3;
         }
     }
+    if (gCurrentMove == MOVE_FUSION_BLAST)
+{
+    if (IS_BATTLER_OF_TYPE(gBattlerTarget, TYPE_WATER))
+    {
+        flags |= MOVE_RESULT_SUPER_EFFECTIVE;
+    }
+}
+
 
     if (gBattleMons[gBattlerTarget].ability == ABILITY_WONDER_GUARD
         && !(flags & MOVE_RESULT_NO_EFFECT)
