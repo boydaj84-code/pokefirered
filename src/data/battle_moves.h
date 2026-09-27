@@ -4703,5 +4703,30 @@ const struct BattleMove gBattleMoves[MOVES_COUNT] =
     .priority = 0,
     .flags = FLAG_PROTECT_AFFECTED | FLAG_MAKE_CONTACT,
 },
+[MOVE_BLUE_FLARE] =
+{
+    .effect = EFFECT_BURN_HIT, // Or your preferred effect (often has a 20% burn chance)
+    .power = 130,
+    .type = TYPE_FIRE,
+    .accuracy = 85,
+    .pp = 5,
+    .secondaryEffectChance = 20,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED,
+},
+
+[MOVE_BOLT_STRIKE] =
+{
+    .effect = EFFECT_PARALYZE_HIT, // Often has a 20% paralysis chance
+    .power = 130,
+    .type = TYPE_ELECTRIC,
+    .accuracy = 85,
+    .pp = 5,
+    .secondaryEffectChance = 20,
+    .target = MOVE_TARGET_SELECTED,
+    .priority = 0,
+    .flags = FLAG_PROTECT_AFFECTED | FLAG_MAKE_CONTACT,
+},
 
 };
